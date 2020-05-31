@@ -1,0 +1,40 @@
+.modal-visi{
+    width: 90% !important;
+    max-width: none!important;
+}
+
+.modal-header-ghost{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cropper-ghost-image{
+    height: auto; 
+    width: 100%; 
+    max-height: 200px !important;
+}
+
+@media (min-width: 576px){
+    .cropper-ghost-image{
+        max-height: 300px !important;
+    }
+}
+
+@media (min-width: 768px){ 
+    .cropper-ghost-image{
+        max-height: 400px !important;
+    }
+}
+
+@media (min-width: 992px){
+    .cropper-ghost-image{
+        max-height: 500px !important;
+    }
+}
+
+@media (min-width: 1200px){
+    .cropper-ghost-image{
+        max-height: 600px !important;
+    }
+}

@@ -1,0 +1,8 @@
+// This archive is to modify bootstrap
+$theme-colors: (
+  "primary": #62929A
+);
+
+$font-family-base: ("Verdana");
+// Bootstrap and its default variables
+@import "../node_modules/bootstrap/scss/bootstrap";
