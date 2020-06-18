@@ -6,7 +6,7 @@ const Alert: React.FC<{ show: boolean, type: number, text: string }> = ({show, t
     <AlertB 
         variant={type === 1 ? "warning" : "danger"} 
         show={show}
-        style={{position: "absolute"}}
+        style={{position: "fixed"}}
         className="alert-modal">
         {text}
     </AlertB>

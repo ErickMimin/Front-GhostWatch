@@ -11,18 +11,30 @@ import Cropper from 'react-cropper';
 import 'cropperjs/dist/cropper.css';
 import './Home.css';
 
-const Home: React.FC = () => {
+const Home: React.FC<{history: any}> = ({history}) => {
+  // Estados
   const [image, setImage] = useState("");
   const [show, setShow] = useState(false);
   const [preview, setPreview] = useState(null as any);
   const [alert, setAlert] = useState({show: false, text: "", type: 1});
+
+  // Referencias
   const fileInput = useRef<HTMLInputElement>(null);
   const chargeCheck = useRef<HTMLInputElement>(null);
   const modal = useRef<Modal<"div">>(null);
+  const cropper = useRef<Cropper>(null);
   
   const handleClose = () => {
     setShow(false);
     setImage("");
+  };
+
+  const handleRequest = () => {
+    history.push('process-image/', {
+      state: true,
+      files: fileInput.current?.files,
+      crop: cropper.current?.getData(true)
+    });
   };
 
   const handleButton = () => {
@@ -65,12 +77,15 @@ const Home: React.FC = () => {
         show={show} 
         ref={modal} 
         onHide={handleClose}
-        dialogClassName="modal-visi">
+        dialogClassName="modal-visi"
+        backdrop="static"
+        keyboard={false}>
         <Modal.Header>
           <div className="modal-header-ghost .d-sm-none .d-md-block"><HeadGhost></HeadGhost></div>
         </Modal.Header>
         <Modal.Body className="bg-secondary">
           <Cropper
+          ref = {cropper}
           src = {preview}
           className="cropper-ghost-image"
           // Cropper.js options
@@ -80,7 +95,7 @@ const Home: React.FC = () => {
           modal={false}
           minCropBoxHeight={280}
           background={false}
-          guides={false} />
+          guides={false}/>
         </Modal.Body>
         <Modal.Footer style={{flexDirection: "column"}}>
           <div className="row">
@@ -90,7 +105,7 @@ const Home: React.FC = () => {
               </Button>
             </div>
             <div className="col">
-              <Button variant="primary" onClick={handleClose}>
+              <Button variant="primary" onClick={handleRequest}>
                 Procesar
               </Button>
             </div>

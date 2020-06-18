@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 const HeadGhost: React.FC = () => {
   return (
-    <Navbar className="justify-content-center">
+    <Navbar className="justify-content-center bg-light" style={{position: 'sticky', top: 0, zIndex: 1030}}>
         <div className="row mt-3" style={{justifyContent: 'center'}}>
             <div className="col-auto">
                 <a href="/"><img src={LogoGhost} alt="LogoGhostWatch" style={{ width : '60px'}}/></a>

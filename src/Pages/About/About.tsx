@@ -3,14 +3,15 @@ import HeadGhost from '../../Components/HeadGhost';
 
 const About: React.FC = () => {
   return (
-    <div className="container">
-      {/* --- Head --- */}
+    <>
       <HeadGhost></HeadGhost>
-      <div className="row">
+      <div className="container mt-3">
+        {/* --- Head --- */}
+        <div className="row">
 
+        </div>
       </div>
-    </div>
-
+    </>
   ); 
 }
 
