@@ -1,4 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GhostWatch App Front-End
+<p align="center">
+  <img src="/images/Logo_GhostWatch_Shield.png" alt="GhostWatch Logo">
+</p>
+The GhostWatch App is a web application to convert b/w images into color images with the help of artificial intelligence. This project is made with the react library.
+
+## Screenshots
+<p align="center">
+    App Home
+  <img src="/images/Web1.jpg" alt="Web1">
+    Image preprocesation
+  <img src="/images/web2.jpg" alt="Web2">
+    Image Result
+  <img src="/images/web3.jpg" alt="Web3">
+    App rate form
+  <img src="/images/Web4.jpg" alt="Web4">
+</p>
 
 ## Available Scripts
 
@@ -37,32 +53,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
